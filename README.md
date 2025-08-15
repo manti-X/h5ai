@@ -4,6 +4,8 @@
 
 A modern HTTP web server index for Apache httpd, lighttpd, and nginx.
 
+**This is a fork of [lrsjng's h5ai](https://github.com/lrsjng/h5ai), which appears to be no longer maintained.**
+
 
 ## Important
 
