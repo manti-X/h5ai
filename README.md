@@ -20,8 +20,7 @@ A HTTP web server index for Apache httpd, lighttpd, and nginx.
 
 ## Build
 
-There are installation ready packages for the latest [releases][release] and
-[dev builds][develop]. But to build **h5ai** yourself either `git clone` or
+There are installation ready packages for the latest [releases][release]. But to build **h5ai** yourself either `git clone` or
 download the repository. From within the root folder run the following
 commands to find a fresh zipball in folder `build` (tested and requires
 [`node 10.0 - 11.5.2`][node] to work).
