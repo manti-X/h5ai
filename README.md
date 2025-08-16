@@ -1,6 +1,6 @@
 # h5ai
 
-[![license][license-img]][github] [![web][web-img]][web] [![github][github-img]][github]
+[![license][license-img]][github]
 
 A HTTP web server index for Apache httpd, lighttpd, and nginx.
 
@@ -11,11 +11,11 @@ A HTTP web server index for Apache httpd, lighttpd, and nginx.
 
 * Do **not** install any files from the `src` folder, they need to be
   preprocessed to work correctly!
-* Find a preprocessed package and detailed install instructions on the
-  [project page][web].
+* Find a preprocessed package and detailed install instructions on the old
+  [project page](https://web.archive.org/web/20240120005545/https://larsjung.de/h5ai/).
 * For bug reports and feature requests please use [issues][github-issues].
 * Requires at least **PHP 7.0.0+**
-* Tested with **PHP 8.4.0**
+* Tested with **PHP 8.4.0** and **nginx**
 
 
 ## Build
