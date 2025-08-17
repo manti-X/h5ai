@@ -27,20 +27,6 @@ commands to find a fresh zipball in folder `build`. Requires **[`node 18.18.0`][
 > npm install
 > npm run build
 ~~~
-<<<<<<< Updated upstream
-Because of outdated `ghu`, it might be necessary to use:
-<h4>Windows</h4>
-
-~~~sh
-> $env:NODE_OPTIONS = "--openssl-legacy-provider"; npm run build
-~~~
-<h4>Linux</h4>
-
-~~~sh
-> NODE_OPTIONS=--openssl-legacy-provider npm run build
-~~~
-=======
->>>>>>> Stashed changes
 
 
 ## Optional Dependencies
