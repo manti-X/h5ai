@@ -1,15 +1,59 @@
 # Changelog
 
 
+## v0.32.0 - *2025-08-18*
+
+* Update README.md
+* Custom thumbnails for folders (create a `_thumb` folder inside the target folder)
+* Add `webP` format support
+* Switch thumbnail format to `webP`
+* Replace `ghu` for `gulp`
+* Rewrite `eslint` for v9
+* Update `options.json`
+* Update test build
+* Update support page
+* Small fixes
+
+Dependencies
+* Update `@babel/core` to 7.28.3
+* Update `@babel/preset-env` to 7.28.3
+* Add `@eslint/js` 9.5.0
+* Add `babel-loader` 10.0.0
+* Add `del` 6.0.0
+* Update `eslint` to 9.5.0
+* Add `globals` 15.6.0
+* Remove `ghu`
+* Add `gulp` 4.0.2
+* Add `gulp-autoprefixer` 8.0.0
+* Add `gulp-clean-css` 4.3.0
+* Add `gulp-footer` 2.1.0
+* Add `gulp-header` 2.0.9
+* Add `gulp-if` 3.0.0
+* Add `gulp-include` 2.4.1
+* Add `gulp-less`: 5.0.0
+* Add `gulp-pug`: 5.0.0
+* Add `gulp-rename`: 2.1.0
+* Add `gulp-replace` 1.1.4
+* Add `gulp-uglify` 3.0.2
+* Add `gulp-zip` 5.1.0
+* Update `jsdom` to 26.1.0
+* Update `marked` to 16.1.2
+* Update `scar` to 2.3.4
+* Add `webpack-stream` 7.0.0
+
+
 ## v0.31.0 - *2020-02-07*
 
-* update all languages
-* drastically reduce disk usage of thumbnails
-* fix thumbnails for video files under 10 seconds
-* add thumbnail support for most common archive formats (requires Zip, Rar PHP modules)
-* fix broken thumbnails and previews for files with incorrect file extensions
-* add file type detection based on MIME (requires Fileinfo PHP module)
-* remove client's ability to request custom samples and thumbnails
+Merge open pull request from original.
+* Reduce disk usage of thumbnails
+* Fix thumbnails for video files under 10 seconds
+* Add thumbnail support for archive formats (requires Zip, Rar PHP modules)
+* Fix broken thumbnails and previews for files with incorrect file extensions
+* Add file type detection based on MIME (requires Fileinfo PHP module)
+* Remove client's ability to request custom samples and thumbnails
+* Update languages
+* Add touch gesture support
+* Line wrapping pv-content-txt
 
 
 ## v0.30.0 - *2020-01-24*
