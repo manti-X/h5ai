@@ -11,7 +11,7 @@ A HTTP web server index for Apache httpd, lighttpd, and nginx.
 
 * Do **not** install any files from the `src` folder, they need to be
   preprocessed to work correctly!
-* Find detailed install instructions on the old [project page][old-project-page].
+* Find detailed install instructions on the [wiki][wiki].
 * For bug reports and feature requests please use [issues][github-issues].
 * Requires at least **PHP 7.0.0+**
 * Tested with **PHP 8.4.0** and **nginx**
@@ -79,7 +79,7 @@ too. Exceptions are some [Material Design icons][material-design-icons] (CC BY 4
 [release]: https://github.com/manti-X/h5ai/releases
 [node]: https://nodejs.org
 [material-design-icons]: https://github.com/google/material-design-icons
-[old-project-page]: https://web.archive.org/web/20240120005545/https://larsjung.de/h5ai/
+[wiki]: https://github.com/manti-X/h5ai/wiki/h5ai-wiki
 [RAR-Module]: https://pecl.php.net/package/rar
 [kofi]: https://ko-fi.com/bakaloli
 
