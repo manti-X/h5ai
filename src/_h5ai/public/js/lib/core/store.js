@@ -5,7 +5,7 @@ const storekey = '_h5ai';
 const load = () => {
     try {
         return JSON.parse(store[storekey]);
-    } catch (e) {/* skip */}
+    } catch { /* skip */ }
     return {};
 };
 

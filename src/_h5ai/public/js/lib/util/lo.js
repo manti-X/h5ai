@@ -3,7 +3,7 @@ const tof = (x, str) => typeof x === str;
 const isStr = x => tof(x, 'string');
 const isFn = x => tof(x, 'function');
 const isNum = x => tof(x, 'number');
-const hasLength = x => x && x.hasOwnProperty('length');
+const hasLength = x => x && Object.prototype.hasOwnProperty.call(x, 'length');
 const keys = obj => {
     if (!obj || isStr(obj)) {
         return [];

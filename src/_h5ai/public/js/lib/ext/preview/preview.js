@@ -141,7 +141,7 @@ const defaultControls = ev => {
 
     if (key === 27) { // esc
         dropEvent(ev);
-        exit(); // eslint-disable-line no-use-before-define
+        exit();
     } else if (key === 8 || key === 37) { // backspace, left
         dropEvent(ev);
         prev();
@@ -152,14 +152,14 @@ const defaultControls = ev => {
         dropEvent(ev);
         toggleFullscreen();
     }
-}
+};
 
 const videoControls = ev => {
     const key = ev.keyCode;
 
     if (key === 27) { // esc
         dropEvent(ev);
-        exit(); // eslint-disable-line no-use-before-define
+        exit();
     } else if (key === 8 || key === 188) { // backspace === 8; , ===188
         dropEvent(ev);
         prev();
@@ -170,21 +170,21 @@ const videoControls = ev => {
         dropEvent(ev);
         toggleFullscreen();
     }
-}
+};
 
 const onKeydown = ev => {
     switch(Preview.controlsType){
-        case "vid":
-            videoControls(ev)
-            break;
-        default:
-            defaultControls(ev)
+    case 'vid':
+        videoControls(ev);
+        break;
+    default:
+        defaultControls(ev);
     }
-}
+};
 
 const setControlType = (t) =>{
-    Preview.controlsType = t
-}
+    Preview.controlsType = t;
+};
 
 const onTouchstart = ev => {
     const now = Date.now();
@@ -202,8 +202,8 @@ const onTouchstart = ev => {
     };
 
     dom(doc)
-        .on('touchmove', onTouchmove) // eslint-disable-line no-use-before-define
-        .on('touchend', onTouchend); // eslint-disable-line no-use-before-define
+        .on('touchmove', onTouchmove)
+        .on('touchend', onTouchend);
 };
 
 const onTouchmove = ev => {
@@ -344,7 +344,7 @@ const register = (types, load, adjust) => {
 
                 session = Session(matchedItems, matchedItems.indexOf(item), load, adjust);
                 enter();
-            }
+            };
 
             if (item.click_callback) {
                 item.$view.find('a').off('click', item.click_callback);
@@ -394,14 +394,16 @@ const init = () => {
         .on('load', updateGui);
 };
 
-var Preview =  module.exports = {
+const Preview = {
     setLabels,
     register,
     get item() {
         return session && session.item;
     },
-    controlsType:"default",
+    controlsType:'default',
     setControlType
 };
+
+module.exports = Preview;
 
 init();

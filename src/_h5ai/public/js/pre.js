@@ -1,11 +1,10 @@
-/* eslint-disable func-names,no-var */
 (function (win) {
     if (!win || win.window !== win || !win.document) {
         throw new Error('no-window');
     }
 
-    var no_browser = 'no-browser';
-    var doc_el = win.document.documentElement;
+    const no_browser = 'no-browser';
+    const doc_el = win.document.documentElement;
     doc_el.className = '';
 
     function assert(msg, expr) {
@@ -25,4 +24,3 @@
     // assert('xhr', is_fn(win.XMLHttpRequest)); // is object in safari
     assert('xhr', win.XMLHttpRequest);
 }(this));
-/* eslint-enable */

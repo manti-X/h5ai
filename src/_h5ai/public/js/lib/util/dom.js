@@ -35,7 +35,7 @@ const parse_html = (() => {
 const query_all = (selector, context = doc) => {
     try {
         return toArray(context.querySelectorAll(selector));
-    } catch (err) {
+    } catch {
         return [];
     }
 };

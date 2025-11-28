@@ -46,7 +46,7 @@ const onIndicatorClick = ev => {
     if (item._treeState === 'unknown') {
         item.fetchContent().then(() => {
             item._treeState = 'open';
-            update(item); // eslint-disable-line no-use-before-define
+            update(item);
         });
     } else if (item._treeState === 'open') {
         item._treeState = 'closed';

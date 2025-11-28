@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 const esc_pattern = sequence => {
     return sequence.replace(/[\-\[\]{}()*+?.,\\$\^|#\s]/g, '\\$&');
 };
@@ -15,6 +16,7 @@ const parse_pattern = (sequence, advanced) => {
         return part.split('').map(char => esc_pattern(char)).join('.*?');
     }).join('|');
 };
+
 
 module.exports = {
     parsePattern: parse_pattern
