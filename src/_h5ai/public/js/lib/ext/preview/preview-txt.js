@@ -71,7 +71,15 @@ const load = item => {
 
 const init = () => {
     if (settings.enabled) {
-        preview.register(keys(settings.styles), load, updateGui);
+        const typesToRegister = keys(settings.styles);
+        // Fallback: ensure markdown types are always registered
+        if (!typesToRegister.includes('txt-md')) {
+            typesToRegister.push('txt-md');
+        }
+        if (!typesToRegister.includes('txt-readme')) {
+            typesToRegister.push('txt-readme');
+        }
+        preview.register(typesToRegister, load, updateGui);
     }
 };
 
