@@ -235,6 +235,21 @@ body[data-theme="dark"] div#pv-content-txt {
     color: @col-text-primary-white;
 }
 
+/* Make custom header and footer readable in dark mode */
+body[data-theme="dark"] #content-header,
+body[data-theme="dark"] #content-footer {
+    background: transparent; /* allow underlying content background */
+    color: @col-text-primary-white;
+}
+body[data-theme="dark"] #content-header a,
+body[data-theme="dark"] #content-footer a {
+    color: @col-link;
+}
+body[data-theme="dark"] #content-header a:hover,
+body[data-theme="dark"] #content-footer a:hover {
+    color: @col-link-hover;
+}
+
 body[data-theme="dark"] #view #view-hint,
 body[data-theme="dark"] #view .no-match,
 body[data-theme="dark"] .l10n-noMatch,
