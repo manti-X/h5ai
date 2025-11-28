@@ -249,6 +249,14 @@ body[data-theme="dark"] #content-header a:hover,
 body[data-theme="dark"] #content-footer a:hover {
     color: @col-link-hover;
 }
+body[data-theme="dark"] #content-header code,
+body[data-theme="dark"] #content-footer code,
+body[data-theme="dark"] #content-header pre,
+body[data-theme="dark"] #content-footer pre {
+    background: darken(@col-grey-900, 2%);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: @col-text-primary-white;
+}
 
 body[data-theme="dark"] #view #view-hint,
 body[data-theme="dark"] #view .no-match,
