@@ -1,7 +1,7 @@
 const {dom} = require('../util');
 const config = require('../config');
 const server = require('../server');
-const resource = require('../core/resource');
+require('../ext/theme');
 
 
 const testsTpl =

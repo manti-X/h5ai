@@ -12,7 +12,7 @@ const defaults = {
     delay: 1,
     exif: false,
     chunksize: 20,
-    blocklist: [],
+    blocklist: []
 };
 const default_types = defaults.img.concat(defaults.mov, defaults.doc, defaults.ar);
 const settings = Object.assign(defaults, allsettings.thumbnails);
@@ -61,7 +61,7 @@ const requestQueue = queue => {
     const thumbs = map(queue, req => {
         return {
             type: req.type,
-            href: req.href,
+            href: req.href
         };
     });
 

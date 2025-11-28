@@ -1,4 +1,5 @@
 const {each, values, difference} = require('../util');
+/* eslint-disable no-useless-escape */
 const {request} = require('../server');
 const allsettings = require('./settings');
 const event = require('./event');

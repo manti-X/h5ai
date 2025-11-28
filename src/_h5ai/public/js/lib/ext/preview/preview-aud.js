@@ -38,7 +38,7 @@ const load = item => {
         if (settings.autoplay) {
             $el.attr('autoplay', 'autoplay');
             $el.on('loadeddata', () => {
-                var isPlaying = $el[0].currentTime > 0 && !$el[0].paused && !$el[0].ended;
+                const isPlaying = $el[0].currentTime > 0 && !$el[0].paused && !$el[0].ended;
                 if (!isPlaying) {
                     $el[0].play();
                 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 const {keys, each, filter, sortBy, isStr, isNum} = require('../util');
 const server = require('../server');
 const location = require('../core/location');
@@ -15,7 +16,7 @@ const createLabel = sequence => {
     sequence = sequence.replace(reEndsWithSlash, '');
     try {
         sequence = decodeURIComponent(sequence);
-    } catch (e) {/* skip */}
+    } catch { /* skip */ }
     return sequence;
 };
 
@@ -56,7 +57,7 @@ const getItem = options => {
         return null;
     }
 
-    const item = cache[href] || Item(href); // eslint-disable-line no-use-before-define
+    const item = cache[href] || Item(href);
 
     if (isNum(options.time)) {
         item.time = options.time;
@@ -181,7 +182,7 @@ Item.prototype = {
     },
 
     getCrumb() {
-        let item = this; // eslint-disable-line consistent-this
+        let item = this;
         const crumb = [item];
 
         while (item.parent) {
@@ -213,7 +214,7 @@ Item.prototype = {
         });
 
         let depth = 0;
-        let item = this; // eslint-disable-line consistent-this
+        let item = this;
 
         while (item.parent) {
             depth += 1;

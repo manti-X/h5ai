@@ -15,7 +15,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "scar test/index.js",
+    "test": "node scripts/run-tests.js",
     "build": "gulp release",
     "precommit": "npm run -s lint && npm run -s test"
   },
@@ -31,9 +31,9 @@
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-footer": "^2.1.0",
-    "gulp-header": "^2.0.9",
     "gulp-if": "^3.0.0",
     "gulp-include": "^2.4.1",
+    "gulp-insert": "^0.5.0",
     "gulp-less": "^5.0.0",
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.1.0",
@@ -42,6 +42,7 @@
     "gulp-zip": "^6.1.0",
     "jsdom": "^26.1.0",
     "kjua": "^0.10.0",
+    "lebab": "^3.2.7",
     "lolight": "^1.4.1",
     "marked": "^16.2.0",
     "normalize.css": "^8.0.1",

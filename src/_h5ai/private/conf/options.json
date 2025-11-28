@@ -193,7 +193,9 @@
         "show": false,
         "qrcode": true,
         "qrFill": "#999",
-        "qrBack": "#fff"
+        "qrBack": "#fff",
+        "qrFillDark": "#fff",
+        "qrBackDark": "#212121"
     },
 
     /*
