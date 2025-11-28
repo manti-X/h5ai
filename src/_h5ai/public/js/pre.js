@@ -1,4 +1,3 @@
-/* eslint-disable no-var */
 (function (win) {
     if (!win || win.window !== win || !win.document) {
         throw new Error('no-window');
@@ -25,4 +24,3 @@
     // assert('xhr', is_fn(win.XMLHttpRequest)); // is object in safari
     assert('xhr', win.XMLHttpRequest);
 }(this));
-/* eslint-enable */
