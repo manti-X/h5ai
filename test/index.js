@@ -19,5 +19,6 @@ require('./tests/unit/core/format');
 require('./tests/unit/util/naturalCmp');
 require('./tests/unit/util/parsePatten');
 require('./tests/unit/preview-md');
+require('./tests/unit/types-md');
 
 pin_html();
