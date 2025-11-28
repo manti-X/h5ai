@@ -1,4 +1,5 @@
-const marked = require('marked');
+const rawMarked = require('marked');
+const marked = (typeof rawMarked === 'function') ? rawMarked : rawMarked.parse;
 const {each, dom} = require('../util');
 const server = require('../server');
 const event = require('../core/event');
@@ -12,9 +13,12 @@ const settings = Object.assign({
 const update = (data, key) => {
     const $el = dom(`#content-${key}`);
 
-    if (data && data[key].content) {
+    if (data && data[key] && data[key].content) {
         let content = data[key].content;
-        if (data[key].type === 'md') {
+        // The server returns 'md' for markdown files but in some setups
+        // it might return 'txt-md' or similar. Accept both to be tolerant.
+        const type = (data[key].type || '').toLowerCase();
+        if (type === 'md' || type === 'txt-md' || type === 'markdown') {
             content = marked(content);
         }
         $el.html(content).show();

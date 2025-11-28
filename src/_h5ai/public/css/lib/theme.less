@@ -1,0 +1,266 @@
+/*
+ Theme overrides for darkmode.
+*/
+
+body[data-theme="dark"] {
+    color: @col-text-primary-white;
+    background: @col-grey-900;
+}
+
+body[data-theme="dark"] #root,
+body[data-theme="dark"] #mainrow,
+body[data-theme="dark"] #content,
+body[data-theme="dark"] #mainrow #content {
+    background: @col-grey-900;
+    color: @col-text-primary-white;
+}
+
+body[data-theme="dark"] #topbar {
+    background: @col-grey-900;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+body[data-theme="dark"] #toolbar .tool img {
+    filter: none;
+}
+body[data-theme="dark"] #toolbar .tool:hover {
+    background: rgba(255,255,255,0.04);
+}
+
+body[data-theme="dark"] #toolbar #theme.active img { 
+    filter: invert(1) opacity(0.95);
+}
+
+body[data-theme="dark"] #backlink,
+body[data-theme="dark"] #backlink:visited,
+body[data-theme="dark"] #backlink:active {
+    color: @col-text-secondary-white;
+}
+body[data-theme="dark"] #backlink:hover {
+    color: @col-text-primary-white;
+}
+
+body[data-theme="dark"] #sidebar {
+    background: @col-grey-900;
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+body[data-theme="dark"] #sidebar .item {
+    color: @col-text-primary-white;
+}
+body[data-theme="dark"] #sidebar .list .item:hover,
+body[data-theme="dark"] #sidebar .list .item.active {
+    background: rgba(255,255,255,0.03);
+}
+
+body[data-theme="dark"] #crumbbar a,
+body[data-theme="dark"] #crumbbar a:visited,
+body[data-theme="dark"] #crumbbar a:active {
+    color: @col-text-primary-white;
+}
+body[data-theme="dark"] #crumbbar a:hover,
+body[data-theme="dark"] #crumbbar a:active:hover {
+    color: @col-text-primary-white;
+    background: rgba(255,255,255,0.02);
+}
+
+body[data-theme="dark"] #tree a,
+body[data-theme="dark"] #tree a:visited,
+body[data-theme="dark"] #tree a:active {
+    color: @col-text-primary-white;
+}
+body[data-theme="dark"] #tree a:hover {
+    color: @col-text-primary-white;
+    background: rgba(255,255,255,0.02);
+}
+body[data-theme="dark"] #tree .summary {
+    color: @col-text-secondary-white;
+}
+
+body[data-theme="dark"] #langs,
+body[data-theme="dark"] #langs option {
+    background: @col-grey-900;
+    color: @col-text-primary-white;
+}
+
+body[data-theme="dark"] .panel,
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .ext-info {
+    background: @col-grey-900;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: @col-text-primary-white;
+}
+
+body[data-theme="dark"] #root.info #content {
+    color: @col-text-primary-white !important;
+}
+
+body[data-theme="dark"] #root.info code {
+    background: darken(@col-grey-900, 2%) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    color: @col-text-primary-white !important;
+}
+
+body[data-theme="dark"] #root.info #header a {
+    color: @col-text-primary-white !important;
+}
+
+body[data-theme="dark"] #root.info #support {
+    background: @col-grey-900 !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    color: @col-text-primary-white !important;
+}
+body[data-theme="dark"] #root.info #support input[type="image"] {
+}
+
+body[data-theme="dark"] #root.info #pass {
+    background: @col-grey-900 !important;
+    color: @col-text-primary-white !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+}
+body[data-theme="dark"] #root.info #login,
+body[data-theme="dark"] #root.info #logout {
+    color: #fff;
+}
+
+body[data-theme="dark"] #root.info #hint {
+    color: @col-text-primary-white !important;
+}
+
+body[data-theme="dark"] #root.info #tests {
+    color: @col-text-primary-white !important;
+}
+body[data-theme="dark"] #root.info #tests .test {
+    background: @col-grey-900 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    color: @col-text-primary-white !important;
+}
+body[data-theme="dark"] #support,
+body[data-theme="dark"] #login-wrapper,
+body[data-theme="dark"] #login,
+body[data-theme="dark"] #logout,
+body[data-theme="dark"] #hint,
+body[data-theme="dark"] #tests,
+body[data-theme="dark"] #tests .test,
+body[data-theme="dark"] #support .kofi a img {
+    background: @col-grey-900 !important;
+    color: @col-text-primary-white !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+body[data-theme="dark"] #header a {
+    color: @col-text-primary-white !important;
+}
+body[data-theme="dark"] #root.info #tests .label {
+    color: @col-text-primary-white;
+}
+body[data-theme="dark"] #root.info #tests .result.passed { color: @col-okay; }
+body[data-theme="dark"] #root.info #tests .result.failed { color: @col-error; }
+body[data-theme="dark"] #root.info #tests .info { color: @col-text-secondary-white; }
+
+body[data-theme="dark"] #view .item {
+    background: @col-grey-900;
+    color: @col-text-primary-white;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+body[data-theme="dark"] #view .item:hover {
+    background: rgba(255,255,255,0.03);
+}
+body[data-theme="dark"] #view .item .label,
+body[data-theme="dark"] #view .item .date,
+body[data-theme="dark"] #view .item .size {
+    color: @col-text-primary-white;
+}
+
+body[data-theme="dark"] #view.view-icons .landscape,
+body[data-theme="dark"] #view.view-grid .square,
+body[data-theme="dark"] #view.view-icons .square {
+    background: @col-grey-900;
+}
+body[data-theme="dark"] #view.view-icons .landscape img,
+body[data-theme="dark"] #view.view-grid .square img,
+body[data-theme="dark"] #view.view-icons .square img {
+    background: transparent;
+}
+
+body[data-theme="dark"] input, body[data-theme="dark"] textarea, body[data-theme="dark"] select {
+    background: @col-grey-900;
+    color: @col-text-primary-white;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+body[data-theme="dark"] #search input,
+body[data-theme="dark"] #filter input {
+    color: @col-text-primary-white;
+    background: transparent;
+    border: none;
+}
+
+body[data-theme="dark"] #search input::placeholder,
+body[data-theme="dark"] #filter input::placeholder {
+    color: @col-text-secondary-white;
+    opacity: 0.7;
+}
+
+body[data-theme="dark"] a, body[data-theme="dark"] a:visited {
+    color: @col-link;
+}
+body[data-theme="dark"] a:hover {
+    color: @col-link-hover;
+}
+
+body[data-theme="dark"] .notification {
+    background: @col-grey-900;
+    color: @col-text-primary-white;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+body[data-theme="dark"] .selected {
+    background: @col-back-selected;
+    color: @col-text-selected;
+}
+
+body[data-theme="dark"] .list .item:hover,
+body[data-theme="dark"] .list .item.selected,
+body[data-theme="dark"] .tool:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+body[data-theme="dark"] .small-muted {
+    color: @col-text-secondary-white;
+}
+
+body[data-theme="dark"] #pv-content-txt,
+body[data-theme="dark"] pre#pv-content-txt,
+body[data-theme="dark"] div#pv-content-txt {
+    background: @col-grey-900;
+    color: @col-text-primary-white;
+}
+
+/* Make custom header and footer readable in dark mode */
+body[data-theme="dark"] #content-header,
+body[data-theme="dark"] #content-footer {
+    background: transparent; /* allow underlying content background */
+    color: @col-text-primary-white;
+}
+body[data-theme="dark"] #content-header a,
+body[data-theme="dark"] #content-footer a {
+    color: @col-link;
+}
+body[data-theme="dark"] #content-header a:hover,
+body[data-theme="dark"] #content-footer a:hover {
+    color: @col-link-hover;
+}
+body[data-theme="dark"] #content-header code,
+body[data-theme="dark"] #content-footer code,
+body[data-theme="dark"] #content-header pre,
+body[data-theme="dark"] #content-footer pre {
+    background: darken(@col-grey-900, 2%);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: @col-text-primary-white;
+}
+
+body[data-theme="dark"] #view #view-hint,
+body[data-theme="dark"] #view .no-match,
+body[data-theme="dark"] .l10n-noMatch,
+body[data-theme="dark"] .l10n-empty {
+    color: @col-text-primary-white !important;
+}

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 const {each, map} = require('../util');
 const config = require('../config');
 
@@ -26,7 +27,7 @@ const getType = sequence => {
     const name = slashidx >= 0 ? sequence.substr(slashidx + 1) : sequence;
     let result;
 
-    let types = Object.keys(regexps);
+    const types = Object.keys(regexps);
     for (let i = 0; i < types.length; ++i) {
         if (regexps[types[i]].test(name)) {
             result = types[i];

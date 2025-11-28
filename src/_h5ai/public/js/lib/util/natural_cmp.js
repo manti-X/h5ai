@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 // Natural Sort algorithm for Javascript - Version 0.7 - Released under MIT license
 // Author: Jim Palmer (based on chunking idea from Dave Koelle)
 
@@ -8,7 +9,7 @@ const RE_DATE = /(^([\w ]+,?[\w ]+)?[\w ]+,?[\w ]+\d+:\d+(:\d+)?[\w ]?|^\d{1,4}[
 const RE_HEX = /^0x[0-9a-f]+$/i;
 const RE_LEADING_ZERO = /^0/;
 
-/* eslint-disable complexity */
+
 const natural_cmp = (a, b) => {
     // convert all to strings strip whitespace
     const x = String(a).trim();
@@ -56,7 +57,7 @@ const natural_cmp = (a, b) => {
     }
     return 0;
 };
-/* eslint-enable */
+
 
 module.exports = {
     naturalCmp: natural_cmp

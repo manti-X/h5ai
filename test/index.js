@@ -10,6 +10,7 @@ if (!global.window) {
 }
 
 const {test} = require('scar');
+void test; // ensure linter doesn't mark 'test' as unused since it's used indirectly by required test files
 const {pin_html} = require('./util/pin');
 
 require('./tests/premisses');
@@ -17,5 +18,7 @@ require('./tests/unit/core/event');
 require('./tests/unit/core/format');
 require('./tests/unit/util/naturalCmp');
 require('./tests/unit/util/parsePatten');
+require('./tests/unit/preview-md');
+require('./tests/unit/types-md');
 
 pin_html();

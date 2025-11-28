@@ -2,7 +2,7 @@ const {dom} = require('../../util');
 const allsettings = require('../../core/settings');
 const preview = require('./preview');
 
-preview.setControlType("vid")
+preview.setControlType('vid');
 
 const settings = Object.assign({
     enabled: false,
@@ -44,7 +44,7 @@ const load = item => {
         if (settings.autoplay) {
             $el.attr('autoplay', 'autoplay');
             $el.on('loadeddata', () => {
-                var isPlaying = $el[0].currentTime > 0 && !$el[0].paused && !$el[0].ended;
+                const isPlaying = $el[0].currentTime > 0 && !$el[0].paused && !$el[0].ended;
                 if (!isPlaying) {
                     $el[0].play();
                 }

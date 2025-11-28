@@ -17,6 +17,7 @@ require('../ext/sort');
 require('../ext/thumbnails');
 require('../ext/title');
 require('../ext/tree');
+require('../ext/theme');
 
 const href = global.window.document.location.href;
 require('../core/location').setLocation(href, true);
