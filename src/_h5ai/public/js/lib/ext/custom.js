@@ -1,4 +1,5 @@
-const marked = require('marked');
+const rawMarked = require('marked');
+const marked = (typeof rawMarked === 'function') ? rawMarked : rawMarked.parse;
 const {each, dom} = require('../util');
 const server = require('../server');
 const event = require('../core/event');
